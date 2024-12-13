@@ -1,0 +1,93 @@
+/* Definindo variáveis de cores */
+:root {
+    --cor-fundo: #f0f8ff;
+    --cor-texto: #333333;
+    --cor-acento: #ff6f61;
+    --cor-card: #ffffff;
+    --cor-borda-card: #cccccc;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background-color: var(--cor-acento);
+    color: white;
+    text-align: center;
+    padding: 2rem;
+}
+
+main {
+    padding: 2rem;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card {
+    background-color: var(--cor-card);
+    border: 1px solid var(--cor-borda-card);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    margin: 1rem;
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+}
+
+footer {
+    background-color: var(--cor-acento);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+a {
+    color: var(--cor-acento);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 0.9rem;
+    }
+
+    header {
+        padding: 1.5rem;
+    }
+
+    main {
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 0.8rem;
+    }
+
+    header {
+        padding: 1rem;
+    }
+
+    main {
+        padding: 1rem;
+    }
+
+    .card {
+        padding: 1rem;
+    }
+}
